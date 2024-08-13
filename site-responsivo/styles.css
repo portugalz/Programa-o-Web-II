@@ -1,0 +1,67 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #141414;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-image: url('https://wallpapercave.com/wp/wp2372227.jpg');
+    background-size: cover; /* Cobre toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: rgb(255, 255, 255);
+    padding: 40px 0;
+    background-color: rgba(1, 1, 1, 80); /* Camada escura com 50% de opacidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra preta suave */
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.content div {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #9c941c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+    .content div {
+        flex: 1 1 100%;
+    }
+}
