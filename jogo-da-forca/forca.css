@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    text-align: center;
+}
+#wordDisplay {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+#hangmanContainer {
+    margin-top: 20px;
+}
+#hangman {
+    margin-top: 10px;
+}
+#hangman div {
+    width: 10px;
+    height: 50px;
+    background-color: #333;
+    margin: 5px auto;
+    display: none;
+}
+

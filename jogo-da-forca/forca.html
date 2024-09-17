@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="forca.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        <div id="wordDisplay"></div>
+        <div id="alphabetButtons"></div>
+        <div id="hangmanContainer">
+            <p>Erros: <span id="wrongGuesses">0</span></p>
+            <div id="hangman"></div>
+        </div>
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+
+    <script src="forca.js"></script>
+</body>
+</html>
