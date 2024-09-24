@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat API</title>
+</head>
+<body>
+    <h1>Imagem de um Gato Aleatório</h1>
+    <img id="catImage" alt="Gato Aleatório" width="400" />
+    
+    <script>
+        const catImage = document.getElementById('catImage');
+
+        fetch('https://api.thecatapi.com/v1/images/search')
+            .then(response => response.json())
+            .then(data => {
+                catImage.src = data[0].url;
+            })
+            .catch(error => {
+                catImage.alt = 'Erro ao carregar imagem.';
+            });
+    </script>
+</body>
+</html>
